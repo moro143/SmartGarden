@@ -1,0 +1,139 @@
+{
+  "main": {
+    "id": "91b72fc5f9b8d96c",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc4235d8e9e4e694",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ESP8266/Functions/Analog to Digital Conversion.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8fdeff5bfc113fcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c762f623f87ba98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0b658d699ae8727",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f9d6ecb927f3e316",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "18f8ffcbc573dce9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b48c7f12d145b145",
+    "type": "split",
+    "children": [
+      {
+        "id": "b30a9b97da5d6dae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70e80911c0d66aff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ESP8266/Functions/Analog to Digital Conversion.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed7dadf36ea6ab61",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ESP8266/Functions/Analog to Digital Conversion.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ec4344633d6e0a8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2b996e636e5cb4db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ESP8266/Functions/Analog to Digital Conversion.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "fc4235d8e9e4e694",
+  "lastOpenFiles": [
+    "ESP8266/Functions.md",
+    "ESP8266/Functions/GPIO Pins.md",
+    "ESP8266/Functions/Temperature and Humidity.md",
+    "ESP8266/Functions/Analog to Digital Conversion.md",
+    "ESP8266/Pins.md"
+  ]
+}
