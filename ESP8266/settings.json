@@ -1,0 +1,17 @@
+{
+    "Device": {
+        "WiFi": {
+            "SSID": "",
+            "Key": ""
+        }
+    },
+    "User": {
+        "Temperature": 25,
+        "Day night cycle": {
+            "Day hours": 16,
+            "Night hours": 8
+        },
+        "Humidity": 20,
+        "Soil": 50
+    }
+}

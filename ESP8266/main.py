@@ -1,6 +1,18 @@
+# Importing settings
+import json
+file = open('settings.json')
+settings = json.load(file)
+
 import machine
 import dht
 import time
+
+# Trying to connect to WiFi if known
+import ESP_control
+ssid = settings["Device"]["WiFi"]["SSID"]
+key = settings["Device"]["WiFi"]["Key"]
+if ssid!="":
+    ESP_control.connect_wifi(ssid, key)
 
 fans = machine.Pin(14, machine.Pin.OUT)
 leds = machine.Pin(12, machine.Pin.OUT)
@@ -9,6 +21,8 @@ heater = machine.Pin(2, machine.Pin.OUT)
 
 temp_hum = dht.DHT22(machine.Pin(5))
 soil = machine.ADC(0)
+
+import measure
 
 while True:
     fans.value(0)
@@ -25,9 +39,6 @@ while True:
 
     time.sleep(5)
 
-    temp_hum.measure()
-    print(temp_hum.temperature())
-    print(temp_hum.humidity())
-
-    print(soil.read())
+    print(measure.temp_hum(temp_hum))
+    print(measure.soil(soil))
     
