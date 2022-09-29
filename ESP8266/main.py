@@ -24,21 +24,45 @@ soil = machine.ADC(0)
 
 import measure
 
+old_time = time.time()
+TIMESTEP = 0.05
+
+is_day = True
+day_time = settings['User']['Day night cycle']['Day hours'] * 60 * 60
+night_time = settings['User']['Day night cycle']['Night hours'] * 60 * 60
+
 while True:
-    fans.value(0)
-    leds.value(0)
-    pump.value(0)
-    heater.value(0)
+    if (time.time() - old_time) > TIMESTEP:         # Enter loop every TIMESTEP seconds
+        old_time = time.time()
 
-    time.sleep(5)
+        # Basic day night cycle
+        if is_day:
+            leds.value(0)
+            day_time -= TIMESTEP
+            if day_time <= 0:
+                is_day = False
+                day_time = settings['User']['Day night cycle']['Day hours'] * 60 * 60
+        else:
+            leds.value(1)
+            night_time -= TIMESTEP
+            if night_time <= 0:
+                is_day = True
+                night_time = settings['User']['Day night cycle']['Night hours'] * 60 * 60
 
-    fans.value(1)
-    leds.value(1)
-    pump.value(1)
-    heater.value(1)
+        c_temp, c_hum = measure.temp_hum(temp_hum)
+        c_soil = measure.soil(soil)
+        
+        # Heater and fans basic automation
+        if settings['User']['Temperature'][0]<=c_temp<=settings['User']['Temperature'][1]:
+            fans.value(1)
+            heater.value(1)
+        elif settings['User']['Temperature'][0]>c_temp:
+            heater.value(0)
+        elif settings['User']['Temperature'][1]<c_temp:
+            fans.value(0)
 
-    time.sleep(5)
-
-    print(measure.temp_hum(temp_hum))
-    print(measure.soil(soil))
-    
+        # Pump basic automation
+        if c_soil >= settings['User']['Soil']:
+            pump.value(1)
+        else:
+            pump.value(0)

@@ -6,7 +6,7 @@
         }
     },
     "User": {
-        "Temperature": 25,
+        "Temperature": [20, 25],
         "Day night cycle": {
             "Day hours": 16,
             "Night hours": 8

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TODO.md",
+            "file": "ESP8266/Saving settings.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "ESP8266/Saving settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "ESP8266/Saving settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "ESP8266/Saving settings.md"
               }
             }
           }
@@ -130,12 +130,15 @@
   },
   "active": "fc4235d8e9e4e694",
   "lastOpenFiles": [
+    "ESP8266/Measurements.md",
+    "ESP8266/Day night cycle.md",
     "ESP8266/Pins.md",
-    "ESP8266/Functions.md",
     "TODO.md",
+    "ESP8266/Saving settings.md",
+    "Day/night cycle.md",
+    "ESP8266/Functions.md",
     "ESP8266/ESP8266.md",
     "ESP8266/Functions/GPIO Pins.md",
-    "ESP8266/Functions/Temperature and Humidity.md",
-    "ESP8266/Functions/Analog to Digital Conversion.md"
+    "ESP8266/Functions/Temperature and Humidity.md"
   ]
 }
